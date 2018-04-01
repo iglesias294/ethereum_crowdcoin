@@ -49,6 +49,7 @@ class CampaignNew extends Component {
 
       <Layout >
       <h3> Create a Campaign </h3> 
+      <h4>You must have MetaMask installed and unlocked.</h4>
       <Form onSubmit = {
         this.onSubmit
       }
@@ -58,8 +59,10 @@ class CampaignNew extends Component {
       Form.Field >
       <
       label >
-      Minimum Contribution < /label> <
-      input label = "wei"
+      Minimum Contribution < /label> 
+      <Input 
+      label="wei"
+      labelPosition="right"
       value = {
         this.state.minimumContribution
       }
